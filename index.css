@@ -1,0 +1,206 @@
+@media (max-width: 991px) {
+    .logo-container {
+        order: 1; /* Bring the logo to the center */
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    /* Navbar toggler on the right */
+    .navbar-toggler {
+        order: 2;
+        margin-left: auto;
+    }
+}
+/* Default style for larger screens */
+/* Ensures that SVG displays properly */
+#logo {
+    display: flex;
+    justify-content: flex-start; /* Center logo horizontally in its container */
+    align-items: center; /* Center vertically if needed */
+    width: 100%; /* Make sure container takes up full width */
+    overflow: visible; /* Ensure SVG isn’t hidden */
+  }
+  /* Default to left-align logo on larger screens */
+  .logo-row {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 12%;
+  }
+  /* Center logo on smaller screens */
+  @media (max-width: 576px) {
+    .logo-row {
+      justify-content: center;
+      padding-left: 0;
+    }
+    #logo {
+      text-align: center;
+    }
+  }
+.offersText{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-left: 3.2%;
+    justify-content: space-between;
+}
+.img-wrapper{
+    max-width: fit-content;
+    height: 59%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.bd-footer{
+    background-color: black !important;
+}
+
+ul{
+    color: #fff;
+}
+.custom-col{
+    flex: 0 0 13%;  /* Custom width based on percentage */
+    max-width: 13%;
+}
+.custom-col1{
+    flex: 0 0 22%;  /* Custom width based on percentage */
+    max-width: 22%;
+}
+/* For smaller screens */
+@media (max-width: 768px) {
+    .custom-col {
+        flex: 0 0 30%;  /* Adjust width for smaller screens */
+        max-width: 30%;
+    }
+
+    .custom-col1 {
+        flex: 0 0 40%;  /* Adjust width for smaller screens */
+        max-width: 40%;
+    }
+}
+/* For very small screens (like mobile devices) */
+@media (max-width: 480px) {
+    .custom-col {
+        flex: 0 0 100%;  /* Full width on very small screens */
+        max-width: 100%;
+    }
+
+    .custom-col1 {
+        flex: 0 0 100%;  /* Full width on very small screens */
+        max-width: 100%;
+    }
+}
+.text-white, .fs-5{
+    overflow: visible;
+}
+.sticky-top {
+    position: sticky;
+    top: 0; /* Adjust as needed */
+    z-index: 10; /* Optional, for layering above other content */
+}
+.custom-col2{
+    flex: 0 0 50%;
+    max-width: 50%;
+    text-align: end;
+}
+@media (max-width : 768px){
+    .custom-col2{
+        flex: 0 0 50%;
+        max-width: 50%;
+        text-align: center;
+        padding-left: 5%;
+    }
+}
+@media (max-width : 480px){
+    .custom-col2{
+        flex: 0 0 50%;
+        max-width: 50%;
+        text-align: center;
+    }
+}
+.fullpage{
+    overflow-y: auto; /* Allows vertical scrolling */
+    overflow-x: hidden; /* Hides overflow on the horizontal axis */
+}
+.buttonLocation{
+    font-size: 1.2rem;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    margin: 0;
+    border-radius: 20px; 
+    font-weight: 600;
+}
+.btn.btn-dark{
+    border-radius: 20px;
+}
+.headerLine{
+    margin: 0;
+    border-top: 1px solid #dbdbdb;
+    color: #212529;
+}
+.text-decoration-none.ms-3.btn{
+    color: black;
+    border-right: 1px solid  #dbdbdb;
+    margin: 1% 0;
+}
+.translate-middle.badge.rounded-pill{
+    color: black;
+    top: 1em;
+    font-size: 1.5em;
+}
+.btn.px-4.py-2{
+    font-size: large;
+    font-weight: 500;
+}
+.mt-1.cartCount{
+    font-size: 1.5em;
+}
+.d-block.w-100.mx-auto.cartImg{
+    width: 25px;
+    height: 25px;
+}
+.button.p-8{
+    border-radius: 20px;
+    padding: 0.375rem 1.75rem;
+}
+.container.browse{
+    margin-left: 15rem;
+}
+.card.col-12.col-sm-6.col-md-6.col-lg-3{
+    width: 30rem;
+    border: none;
+    margin: 1rem;
+}
+.nav-link.fs-3{
+    color: black;
+}
+.mainImgDiv{
+    width: 100%;
+}
+.mainImgDiv img{
+    max-width: 100%;
+}
+.card.col-12.col-sm-6.col-md-6.col-lg-3 a{
+    color: black;
+}
+.card.col-12.col-sm-6.col-md-6.col-lg-3 img{
+    height: 25rem;
+}
+.card.col-12.col-sm-6.col-md-6.col-lg-3 div{
+    background: #f8f7f5;
+}
+.card.col-12 .col-sm-6.col-md-6.col-lg-3.svg{
+    width: 28rem;
+    border: none;
+    margin: 1rem;
+    margin-left: 2rem
+}
+.card.col-12 .col-sm-6.col-md-6.col-lg-3.svg img{
+    height: 26rem;
+    background-color: #f8f7f5;
+}
+@media (max-width : 768px){
+    .card.col-12.col-sm-6.col-md-6.col-lg-3{
+        padding-left: 5%;
+    }
+}
